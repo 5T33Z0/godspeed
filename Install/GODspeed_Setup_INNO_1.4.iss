@@ -2,10 +2,12 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "GODspeed"
-#define MyAppVersion "1.3"
+#define MyAppVersion "1.4"
 #define MyAppPublisher "Neurotoxin"
 #define MyAppURL "https://twicker.ru/godspeed"
 #define MyAppExeName "Neurotoxin.Godspeed.Shell.exe"
+#define MyBinDir SourcePath + "\..\Neurotoxin.Godspeed\Neurotoxin.Godspeed.Shell\bin\Release"
+#define MyResDir SourcePath + "\..\Neurotoxin.Godspeed\Neurotoxin.Godspeed.Shell\Resources"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
@@ -18,12 +20,12 @@ AppPublisher={#MyAppPublisher}
 AppPublisherURL={#MyAppURL}
 AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
-DefaultDirName={pf}\{#MyAppName}
+DefaultDirName={pf64}\{#MyAppName}
 DefaultGroupName={#MyAppName}
 AllowNoIcons=yes
-OutputDir=c:\Users\User\source\repos\Nemiroff\godspeed\Install\Output
-OutputBaseFilename=GODspeed
-SetupIconFile=c:\Users\User\source\repos\Nemiroff\godspeed\Neurotoxin.Godspeed\Neurotoxin.Godspeed.Shell\Resources\app.ico
+OutputDir=..\output
+OutputBaseFilename=GODspeed_v{#MyAppVersion}
+SetupIconFile={#SourcePath}\..\Neurotoxin.Godspeed\Neurotoxin.Godspeed.Shell\Resources\app.ico
 UninstallDisplayIcon={app}\Neurotoxin.Godspeed.Shell.exe
 Compression=lzma
 SolidCompression=yes
@@ -37,8 +39,8 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked; OnlyBelowVersion: 0,6.1
 
 [Files]
-Source: "c:\Users\User\source\repos\Nemiroff\godspeed\Install\Output\Neurotoxin.Godspeed.Shell.exe"; DestDir: "{app}"; Flags: ignoreversion; AfterInstall: FirewallInstall; BeforeInstall: NotifyInstall
-Source: "c:\Users\User\source\repos\Nemiroff\godspeed\Install\Output\*"; Excludes: "*.xml, *.exe"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "{#MyBinDir}\Neurotoxin.Godspeed.Shell.exe"; DestDir: "{app}"; Flags: ignoreversion; AfterInstall: FirewallInstall; BeforeInstall: NotifyInstall
+Source: "{#MyBinDir}\*"; Excludes: "*.xml,*.exe"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "dotNetFx40_Client_setup.exe"; DestDir: {tmp}; Flags: deleteafterinstall; AfterInstall: InstallFramework; Check: FrameworkIsNotInstalled
 
 [Icons]
