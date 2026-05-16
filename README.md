@@ -30,7 +30,7 @@ Head over to the [Releases](../../releases) page to grab the latest installer or
 ### Usage
 
 - Double click or Enter on the **New connection...** item in the Connections pane to create a new connection.
-- Double click or Enter on a connection item to connect to an FTP.
+- Double click or Enter on a connection item to connect to an FTP (Aurora's default FTP Username and Password are `xboxftp`)
 - Browse into your Content folder and wait for your profiles to be recognized. Result will be cached.
 - Browse into your Games folder and wait for your games to be recognized. Result will be cached.
 - If you see a game with a green Xbox icon and trimmed title, it means the game isn't installed on your console. GODspeed checked the title on covers.jqe360.com as a fallback.
