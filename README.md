@@ -1,3 +1,5 @@
+<img width="963" height="556" alt="godspeed" src="https://github.com/user-attachments/assets/4f4cf6cd-c482-41e2-9fb2-414551336a62" />
+
 # GODspeed
 
 An FTP client specifically built for managing files on JTAG/RGH/DevKit Xbox 360 consoles, with real game names and thumbnails instead of cryptic folder IDs.
