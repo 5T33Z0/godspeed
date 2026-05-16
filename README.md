@@ -54,7 +54,6 @@ See [CHANGELOG.md](CHANGELOG.md).
 
 Original project by [mercenaryntx](https://github.com/mercenaryntx/godspeed).  
 Updated fork by [Pandoriaantje](https://github.com/Pandoriaantje/godspeed).  
-Installer, build tooling, and this release by [YourName](https://github.com/YourProfile).
 
 ---
 
