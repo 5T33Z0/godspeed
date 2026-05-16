@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased] v1.4
+## [2026-05-15] v1.4
 
 - ADDED: Inno Setup installer for Windows 10/11 (64-bit)
 - ADDED: Portable `.zip` release
