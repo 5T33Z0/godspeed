@@ -9,6 +9,22 @@
 - REMOVED: Auto-updater and related tooling (no longer functional)
 - REMOVED: Bundled .NET 4.0 installer (unnecessary on modern Windows)
 
+## [2024-03-14] v1.3
+
+- ADDED: Russian (ru-RU) language (partial)
+- ADDED: SharpCompress library for improved archive support
+- ADDED: Human-readable file sizes on the panel
+- ADDED: Open file panel in FTP
+- FIXED: Xbox Unity title recognizer
+- FIXED: SizeConverter display and translation
+- FIXED: Search URL for Google
+- FIXED: Null pointer exception
+- FIXED: File size display on replace dialog
+- FIXED: Drive handling after USB device removal
+- REMOVED: Hungarian (hu-HU) language resource
+- REMOVED: x86 build target (x64 only)
+- REMOVED: WIX installer (replaced with Inno Setup)
+
 ## [Unreleased] v1.2
 
 - ADDED: DashLaunch FTPdll plugin support (ftpdll.xex)
