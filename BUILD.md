@@ -3,6 +3,7 @@
 ## Prerequisites
 
 - Windows 10 or 11 (64-bit)
+- [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-8.0.421-windows-x64-installer) - required for NuGet package restore to work
 - [Visual Studio Build Tools 2022](https://visualstudio.microsoft.com/downloads/) — scroll down to "Tools for Visual Studio", select the **.NET desktop build tools** workload during install
 - [Inno Setup 6](https://jrsoftware.org/isinfo.php) — only needed if you want to build the installer
 
